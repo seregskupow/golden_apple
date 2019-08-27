@@ -2,6 +2,14 @@ $golden:#eeb111;
 $grey:rgb(15, 15, 15);
 $lightgrey:rgb(44, 44, 44);
 @media screen and (max-width: 992px) {
+  header{
+
+    & #golden,#apple{
+      font-size:350px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
 
     #section_one{
 
@@ -19,6 +27,30 @@ $lightgrey:rgb(44, 44, 44);
     }
 
  
+}
+@media screen and (min-width:992px){
+  footer{
+
+    & .footer_wrapper{
+  
+      & .contact_wrap{
+  
+  
+       & .contact-row{
+
+    
+
+        & .contact-col{
+          
+          &:nth-child(2){
+         order: -0;
+        }
+        }
+      
+       }
+    }
+   }
+}
 }
 @media screen and (max-width:770px){
   header{  
@@ -51,6 +83,7 @@ width: 100%;
               color: $golden;
               z-index: 1;
               background:rgba(0,0,0,0.7);
+              padding: 0;
 
                 & .activ_info_wrap{
 
